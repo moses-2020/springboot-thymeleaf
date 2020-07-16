@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>update</title>
+</head>
+<body>
+	<form action="update" method="post">
+		name: <input name="name" th:value="${s.name}"/> <br/>
+		gender: <input name="gender" th:value="${s.gender}"/> <br/>
+		age: <input name="age" th:value="${s.age}"/> <br/>
+    	<input name="id" type="hidden" th:value="${s.id}"/>
+    	<button type="submit">提交</button>
+	</form>
+</body>
+</html>
